@@ -5,7 +5,7 @@ h1, h2{
     color:rosybrown;
 }
 .evenrow{
-    color:wheat;
+    background-color:wheat;
 }
 h1{
     font-size:2em;
