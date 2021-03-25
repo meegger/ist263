@@ -30,4 +30,10 @@ body{
 
 p{
     background-color:#ffffff;
+    margin: 10px; /* this is the area outside the box */
+    padding: 10px; /* this is the space immediately around the content */
+    border: 5px solid #aaaaaa; /*this is a shortcut property with multiple values*/
+    width: 300px;
 }
+/* width of the box + the marginx2 + borderx2 + paddingx2 */
+/* 300 + 20 + 20 + 10 = 350 pixels */
