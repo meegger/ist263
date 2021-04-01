@@ -8,13 +8,15 @@
         <link rel="stylesheet" href="styles.css">
         <style>
             .address {float: left; margin-left: 20px}
-            .links {float: right; margin-right: 20px}
+            .links {float: right; margin-right: 20px; margin-left: 40px;}
             .clear {clear: both;}
-            .part2 {display: flex;}
-            .part2 form, h2, p {padding: 20px;}
+            .part1 {display: flex; background-color: #ababab; border-radius: 1em;}
+            .part2 {display: flex; background-color: #b68973; border-radius: 1em;}
+            .part1, .part2 {padding: 20px; margin: 20px}
             .map, .form {margin: 20px;}
-            .map {flex: 1; order: 2; background-color: #b68973; border-radius: 1em;}
-            .form {flex: 1; order: 1; background-color: #ababab; border-radius: 1em;}
+            .map {order: 2;}
+            .form {order: 1;}
+            .h1 {margin-left: 20px;}
         </style>
     </head>
 
@@ -69,7 +71,7 @@
                     <input type="radio" name="reason" id="reasonoth" value="other">
                     <label for="reasonoth">Other</label><br>
 
-                    <label for="message">Message</label><br>
+                    <br><label for="message">Message</label><br>
                     <textarea name="message" id="message" rows="10" cols="60">Type your message here.</textarea><br>
 
                     <input type="submit" value="Submit Message">
