@@ -19,3 +19,7 @@ nav a{
 nav a:hover{
     background-color: #826c60;
 }
+@media only screen and (max-width: 750px) {
+    a {display: block; width: 100%;}
+    span {display: none;}
+}
