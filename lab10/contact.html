@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="styles.css">
         <style>
             .address {float: left; margin-left: 20px}
-            .links {float: right; margin-right: 20px; margin-left: 40px;}
+            .links {float: right; margin-right: 20px; margin-left: 40px; color: #45484B;}
             .clear {clear: both;}
             .part1 {display: flex; background-color: #faf3e0; border-radius: 1em; color: #45484B;}
             .part2 {display: flex; background-color: #eabf9f; border-radius: 1em; color: #45484B;}
@@ -20,6 +20,9 @@
             .h1 {margin-left: 20px;}
             .part2 {flex-wrap: wrap;}
             .h2 {color: #45484B;}
+            .email {color: #45484B;}
+            #skipbutton {position: absolute; left: -999px; background-color: #eabf9f; border: 1px solid #45484B;}
+            #skipbutton:focus {position: absolute; left: 10px;}
         </style>
     </head>
 
@@ -29,9 +32,14 @@
             <a href="skills.html">Skills</a> <span>|</span>
             <a href="contact.html">Contact</a>
         </nav>
-        <h1>Contact</h1>
+        <a id="skipbutton" href="#maincontent">Skip to Content</a>
+        <header>
+            <h1>Contact</h1>
+        </header>
         <div class="part1">
-            <div class="address">
+
+            <article class="address">
+            <a id="maincontent"></a>
                 <p>Mary-Katheryn Egger</p>
                 <dl>
                     <dt>Syracuse University</dt>
@@ -39,23 +47,23 @@
                     <dt>Syracuse, NY 13244</dt>
                     <dd></dd>
                 </dl>
-            </div>
-            <div class="links">
+            </article>
+            <article class="links">
                 <p>
-                    <a href="mailto:meegger@syr.edu">meegger@syr.edu</a>
+                    <a class="email" href="mailto:meegger@syr.edu">meegger@syr.edu</a>
                 </p>
                 <img src="../images/logo-sized.png" alt="LinkedIn Logo">
                 <a href="https://www.linkedin.com/in/marykatherynegger" target="_blank">My LinkedIn Profile</a>
-            </div>
+            </article>
         </div>
         <div class="clear"></div>
         <div class="part2">
-            <div class="map">
+            <article class="map">
                 <p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2916.0861488792198!2d-76.13303498452208!3d43.0396188791471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d9f3754c82b97b%3A0xa1a5eec56ddb8a56!2sWatson%20hall%2C%20405%20University%20Pl%2C%20Syracuse%2C%20NY%2013210!5e0!3m2!1sen!2sus!4v1614265319821!5m2!1sen!2sus" width="480" height="360" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </p>
-            </div>
-            <div class="form">
+            </article>
+            <article class="form">
                 <h2>Contact Me</h2>
                 
                 <form action="mailto:meegger@syr.edu" method="POST">
@@ -79,7 +87,7 @@
 
                     <input type="submit" value="Submit Message">
                 </form>
-            </div>
+            </article>
         </div>
     </body>
 </html>

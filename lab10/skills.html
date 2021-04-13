@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="styles.css">
         <style>
             table, th, td {border: 1px solid black}
+            #skipbutton {position: absolute; left: -999px; background-color: #eabf9f; border: 1px solid #45484B;}
+            #skipbutton:focus {position: absolute; left: 10px;}
         </style>
     </head>
     <body>
@@ -15,8 +17,11 @@
             <a href="skills.html">Skills</a> <span>|</span>
             <a href="contact.html">Contact</a>
         </nav>
+        <a id="skipbutton" href="#maincontent">Skip to Content</a>
+    <main>
         <table>
             <caption>Personal Skills</caption>
+            <a id="maincontent"></a>
             <tr>
                 <th>Category</th>
                 <th>Skill</th>
@@ -73,5 +78,6 @@
                 <td>Intermediate</td>
             </tr>
         </table>
+    </main>
     </body>
 </html>
