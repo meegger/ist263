@@ -13,11 +13,11 @@ nav{
     padding: 10px;
     margin-bottom: 30px;
 }
-nav a{
-    color: #faf3e0;
-}
 nav a:hover{
     background-color: #826c60;
+}
+nav a{
+    color: #faf3e0;
 }
 @media only screen and (max-width: 750px) {
     a {display: block; width: 100%;}
