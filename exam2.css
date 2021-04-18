@@ -1,0 +1,13 @@
+
+a:hover{
+    color: green;
+}
+/*should be background-color */
+
+nav a{
+    color: red;
+}
+
+.column1, .column2, .column3 {
+    float: left;
+}
