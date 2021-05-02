@@ -8,7 +8,6 @@
         <style>
             .clear {clear: both;}
             .quote {float: right;}
-            .para1, .para2, .para3, .para4 {text-indent: 5%;}
             #skipbutton {position: absolute; left: -999px; border: 1px solid black;}
             #skipbutton:focus {position: absolute; left: 10px;}
             .part1 {display: flex; background-color: #d9cc7c; border-radius: 1em;}
@@ -16,6 +15,10 @@
             .part3 {display: flex; background-color: #8f2828; border-radius: 1em; color: #ffffff;}
             .part1, .part2, .part3 {padding: 20px; margin: 20px;}
             .service4, .para1, .para2, .service2, .para3, .service3, .para4, .ending {margin: 20px;}
+            .header {max-width: 100%;}
+            @media only screen and (max-width: 750px) {
+                .part1, .part2, .part3 {flex-wrap: wrap;}
+            }
         </style>
     </head>
     <body>
@@ -29,7 +32,7 @@
         </nav>
         <a id="skipbutton" href="#maincontent">Skip to Content</a>
 
-        <header><img src="images/serv1-sized.png" alt="Brad Brotherton"></header>
+        <header><img src="images/serv1-sized.png" alt="Brad Brotherton" class="header"></header>
         <main>
             <a id="maincontent"></a>
         <div class="part1">

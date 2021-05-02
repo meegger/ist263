@@ -8,7 +8,6 @@
         <style>
             .clear {clear: both;}
             .quote {float: right;}
-            .para1, .para2, .para3 {text-indent: 5%;}
             #skipbutton {position: absolute; left: -999px; border: 1px solid black;}
             #skipbutton:focus {position: absolute; left: 10px;}
             .part1 {display: flex; background-color: #8f2828; border-radius: 1em; color: #ffffff;}
@@ -20,6 +19,10 @@
             .para3 {order: 1;}
             .part1, .part2, .part3 {padding: 20px; margin: 20px;}
             .comm2, .para1, .comm1, .para2, .comm4, .para3, .ending {margin: 20px;}
+            .header {max-width: 100%;}
+            @media only screen and (max-width: 750px) {
+                .part1, .part2, .part3 {flex-wrap: wrap;}
+            }
         </style>
     </head>
     <body>
@@ -33,7 +36,7 @@
         </nav>
         <a id="skipbutton" href="#maincontent">Skip to Content</a>
         
-        <header><img src="images/comm3-sized.png" alt="Volunteers for the Celebrity Steakout"></header>
+        <header><img src="images/comm3-sized.png" alt="Volunteers for the Celebrity Steakout" class="header"></header>
         <main>
             <a id="maincontent"></a>
         <div class="part1">
