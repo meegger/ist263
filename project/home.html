@@ -4,10 +4,30 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Brotherton Cadillac Home</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            #skipbutton {position: absolute; left: -999px; border: 1px solid black;}
+            #skipbutton:focus {position: absolute; left: 10px;}
+            .quote {float: right;}
+            .clear {clear: both;}
+            .links {display: flex; margin: 10px; padding: 10px;}
+            .history, .service, .community {margin: 20px;}
+        </style>
+        <script>
+            function History () {
+                window.location.href="history.html";
+            }
+            function Service () {
+                window.location.href="service.html";
+            }
+            function Community () {
+                window.location.href="community.html";
+            }
+        </script>
     </head>
     <body>
-        <img src="images/cadillac.png" alt="Cadillac Logo">
-        <img src="images/title.png" alt="Brotherton Cadillac">
+        <img src="images/cadillac-sized.png" alt="Cadillac Logo">
+        <img src="images/title-sized.png" alt="Brotherton Cadillac">
         <nav>
             <a href="home.html">Home</a><span> | </span>
             <a href="history.html">History</a><span> | </span>
@@ -16,15 +36,12 @@
         </nav>
         <a id="skipbutton" href="#maincontent">Skip to Content</a>
 
-        <header><img src="images/header.jpg" alt="Brotherton Family"></header>
-        <main>
+        <header><img src="images/header-sized.png" alt="Brotherton Family"></header>
+        <main class="links">
             <p></p>
-            <img src="images/famb.jpg" alt="Brotherton Family in 1970s">
-            <a href="history.html">History</a>
-            <img src="images/servb.jpg" alt="Service Associate">
-            <a href="service.html">Customer Service</a>
-            <img src="images/commb.jpg" alt="Event in 1990s">
-            <a href="community.html">Our Community</a>
+            <img src="images/famb-sized.png" alt="Brotherton Family in 1970s" class="history" onclick="History();">
+            <img src="images/servb-sized.png" alt="Service Associate" class="service" onclick="Service();">
+            <img src="images/commb-sized.png" alt="Event in 1990s" class="community" onclick="Community();">
         </main>
 
         <footer>

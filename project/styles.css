@@ -1,0 +1,23 @@
+nav {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+nav a:hover {
+    background-color: #c2c2c2;
+}
+a:visited {
+    color: black;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    background-color: #d4d3d2;
+}
+footer {
+    font-style: italic;
+    font-size: 80%;
+}
+@media only screen and (max-width: 750px) {
+    a {display: block; width: 100%;}
+    span {display: none;}
+}
