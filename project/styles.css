@@ -20,4 +20,6 @@ footer {
 @media only screen and (max-width: 750px) {
     a {display: block; width: 100%;}
     span {display: none;}
+    .logo {max-width: 150px;}
+    .name {max-width: 400px;}
 }
