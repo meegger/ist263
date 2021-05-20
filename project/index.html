@@ -29,13 +29,16 @@
             function Community () {
                 window.location.href="community.html";
             }
+            function Logo () {
+                window.location.href="index.html";
+            }
             // retrieved information from https://www.w3schools.com/js/js_window_location.asp for above //
         </script>
     </head>
     <body>
-        <img src="images/cadillac-sized.png" alt="Cadillac Logo" class="logo">
-        <img src="images/title-sized.png" alt="Brotherton Cadillac" class="name">
-        <nav>
+        <img src="images/cadillac-sized.png" alt="Cadillac Logo" class="logo" onclick="Logo();">
+        <img src="images/title-sized.png" alt="Brotherton Cadillac" class="name" onclick="Logo();">
+        <nav class="topnav">
             <a href="index.html">Home</a><span> | </span>
             <a href="history.html">History</a><span> | </span>
             <a href="service.html">Customer Service</a><span> | </span>
@@ -55,6 +58,12 @@
         <footer>
             <hr>
             &copy;2021
+            <nav class="botnav">
+                <a href="https://www.brothertoncadillac.com/">Dealership Website</a><br>
+                <a href="https://www.facebook.com/BrothertonCadillac">Facebook</a><br>
+                <a href="https://www.instagram.com/brothertoncadillac/?hl=en">Renton Instagram</a><br>
+                <a href="https://www.instagram.com/brotherton_nw/?hl=en">Shoreline Instagram</a>
+            </nav>
             <div class="quote">
             "Experience the Brotherton Difference."
             </div>

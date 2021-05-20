@@ -1,8 +1,9 @@
-nav {
+.topnav {
     padding: 10px;
     margin-bottom: 10px;
+    color: black;
 }
-nav a:hover {
+.topnav a:hover {
     background-color: #c2c2c2;
 }
 a:visited {
